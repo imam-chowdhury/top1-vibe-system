@@ -27,3 +27,6 @@ Select checks by the flows and data the change touches. For a new app, review th
 - [ ] Run the primary acceptance case through the normal user entry point against a representative environment. For persisted changes, check the result independently in a fresh session. Identify any mocked boundary.
 - [ ] For a multi-step write, interrupt the operation between steps using a test fixture. Inspect durable state after reopening. For example, a failed reschedule must preserve the original booking, and a successful retry must leave exactly one booking at the requested time.
 - [ ] If an essential acceptance case fails, fix it and replay it. If it cannot be exercised, report the affected journey as unverified and identify the missing evidence. Reserve a readiness claim for the scope and environment actually verified.
+
+- [ ] For a new visual direction, compare the rendered alternatives with the same brief and record the user task that determined the choice. Check a second screen for consistent tokens and component behavior.
+- [ ] For generative art, canvas or scroll animation, test the static fallback, reduced motion, keyboard navigation and text readability. Record a performance observation on the target device or identify the untested device.
