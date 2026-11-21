@@ -48,6 +48,14 @@ Use the engineering time saved to improve one product-specific interaction. Iden
 
 For apps that call paid AI services, keep provider secrets server-side, restrict access per user, bound input and output sizes, and cap retries and usage. Test the quota-exhausted path and measure token usage and latency on a representative request before making cost claims.
 
+## Challenge a feature when it works against the goal
+
+Apply this in every mode before committing to a consequential choice and again if implementation reveals new evidence. Infer the intended user outcome from the brief and the current journey. If the request fits, proceed. Surface a concern when you can name a meaningful consequence, such as adding a mandatory step to a time-sensitive task, excluding keyboard users, or increasing cost beyond the stated budget.
+
+Tell the user which goal is affected, the evidence or assumption behind the concern, and one practical alternative that achieves their intent. When evidence is thin, suggest the smallest comparison that could settle the question. Avoid presenting predicted user behavior as an observed result.
+
+For advice-only requests, return the recommendation before editing. For delegated implementation choices, take a reversible option within scope and disclose it. If the alternative would remove an explicit requirement or change product policy, ask which direction to take before changing that part. Continue independent work. Respect an informed choice within applicable constraints.
+
 ## Own the PRD for builds and redesigns
 
 Write the PRD yourself before implementation. Read the brief, existing specs, project instructions, manifests, and relevant screens or routes. Use [the PRD template](PRD.md) to create or update the target project's PRD.md, preserving prior requirements and user decisions. Keep the bundled template reusable. When the user delegates a choice, decide it, record why, and proceed. Ask only when a missing decision materially changes the intended outcome and available evidence cannot resolve it.
