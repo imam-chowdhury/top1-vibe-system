@@ -29,6 +29,18 @@ Read the candidate method itself before adopting it. Compare the strongest appli
 
 Choose a connected MCP tool for the evidence or action it can actually provide. For example, use an available browser inspector to exercise a dialog with the keyboard and observe focus restoration. If unavailable, use an existing browser test or mark that interaction unverified. In the PRD or handoff, give a short decision note for material choices: source consulted, technique used, alternative considered, and observed result or planned check. Claim tool use only after executing it.
 
+### Reuse open-source implementations
+
+Before implementing a substantial, widely solved capability, inspect the project's existing dependencies, then search GitHub for maintained implementations when network access is available. Search by function and platform using public terms. Keep private source, customer data and credentials out of queries. Conserve context by reading licenses, manifests, relevant source paths and focused tests before loading larger files.
+
+Compare the most promising candidate with the existing stack or a small local implementation. Consider API fit, accessibility, upstream maintenance, dependency footprint, published security advisories and the cost of future updates. Inspect install scripts and requested permissions before integration. Choose the smallest maintained package or reusable component that passes a representative test in the target app. Record the upstream URL and exact version or commit. If a candidate fails, fall back to the working alternative.
+
+Verify license coverage at the chosen revision, including separate terms for fonts, images, datasets and bundled components. Prefer compatible permissive licensing such as MIT when it fits the project. Preserve the upstream copyright and license text with redistributed copies or substantial portions of MIT software. If rights for an asset are unclear, select a cleared alternative. [MIT license terms](https://opensource.org/license/mit)
+
+Use the engineering time saved to improve one product-specific interaction. Identify a moment where the user waits, repeats work or makes a costly mistake. Prototype an improvement with realistic content and compare completion steps, elapsed time or errors with the baseline. Preserve the design that improves the user's outcome.
+
+For apps that call paid AI services, keep provider secrets server-side, restrict access per user, bound input and output sizes, and cap retries and usage. Test the quota-exhausted path and measure token usage and latency on a representative request before making cost claims.
+
 ## Own the PRD for builds and redesigns
 
 Write the PRD yourself before implementation. Read the brief, existing specs, project instructions, manifests, and relevant screens or routes. Use [the PRD template](PRD.md) to create or update the target project's PRD.md, preserving prior requirements and user decisions. Keep the bundled template reusable. When the user delegates a choice, decide it, record why, and proceed. Ask only when a missing decision materially changes the intended outcome and available evidence cannot resolve it.
