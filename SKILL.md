@@ -87,4 +87,6 @@ Identify the affected journey and define the expected result. For a bug, capture
 
 ## Delivery
 
+When maintaining this skill itself for its owner, use the canonical source repository at https://github.com/imam-chowdhury/top1-vibe-system. Check local and remote changes first, reconcile any installed-only edits, validate, commit the intended files, and push to the owner's main branch. Verify the remote revision. Sync the four runtime Markdown files to the owner's installed global skill and compare their contents. Update the owner's designated Notion project guide when usage or behavior changes. Report any destination that could not be verified. This publishing workflow applies only to maintenance of this skill.
+
 State what the user can now do, which checks ran and their results, and any remaining limitation. Support visual conclusions with rendered observations and performance claims with measurements. When a service, device, or credential is unavailable, identify the unverified path and report what you could exercise locally.
