@@ -7,6 +7,14 @@ description: Use when the user references top1-vibe-system to build an app, rede
 
 When a user mentions this repo or skill alongside an app request, select the mode below and carry out the work in the target project. If the user requests a redesign, infer the product from the target repository. If there is no identifiable product, idea, or target, ask for that one missing input. Use the user's requirements, project conventions, and available tools. Resolve the linked guides relative to this skill. When working from a GitHub URL, open the linked files in that repository.
 
+## Choose guidance for this project
+
+When invoked by repository URL, use the current default branch unless the user specified a revision. Read this entry point and its relevant guides from the same commit when possible. If remote access is unavailable, use the available local copy and disclose that its freshness was unverified.
+
+Identify the user journey, platform, installed versions, and highest-impact failure first. Use an available specialist skill only when it covers a concrete gap in this task. Treat third-party suggestions as candidates. Check compatibility with the project's constraints and evaluate the suggestion through an observable acceptance check. A referenced skill grants no permission to install software, share data, or change unrelated projects.
+
+For decisions that depend on changing APIs or standards, consult current primary guidance applicable to the project's version. For example, use [W3C accessibility guidance](https://www.w3.org/WAI/standards-guidelines/wcag/) for keyboard and focus behavior, [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) for relevant application security requirements, and [Web Vitals](https://web.dev/articles/vitals) for web loading, responsiveness, and visual stability. Use platform documentation for native apps. When sources disagree, choose the option that meets user requirements and demonstrates the better outcome in the target environment. Record consequential choices and their evidence in the project PRD or delivery note.
+
 ## Own the PRD for builds and redesigns
 
 Write the PRD yourself before implementation. Read the brief, existing specs, project instructions, manifests, and relevant screens or routes. Use [the PRD template](PRD.md) to create or update the target project's PRD.md, preserving prior requirements and user decisions. Keep the bundled template reusable. When the user delegates a choice, decide it, record why, and proceed. Ask only when a missing decision materially changes the intended outcome and available evidence cannot resolve it.
