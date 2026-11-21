@@ -15,6 +15,20 @@ Identify the user journey, platform, installed versions, and highest-impact fail
 
 For decisions that depend on changing APIs or standards, consult current primary guidance applicable to the project's version. For example, use [W3C accessibility guidance](https://www.w3.org/WAI/standards-guidelines/wcag/) for keyboard and focus behavior, [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) for relevant application security requirements, and [Web Vitals](https://web.dev/articles/vitals) for web loading, responsiveness, and visual stability. Use platform documentation for native apps. When sources disagree, choose the option that meets user requirements and demonstrates the better outcome in the target environment. Record consequential choices and their evidence in the project PRD or delivery note.
 
+### Find and apply specialist methods
+
+For a consequential design or engineering choice, name the decision before searching. Inspect the host's available skills and MCP capabilities. If the local catalog leaves a gap or plausible approaches differ, look up maintained upstream sources for that specific problem when browsing is available. The following are starting points. Extend the search to the actual platform and domain.
+
+| Decision | Where to look | How to judge the result |
+| --- | --- | --- |
+| Visual direction and hierarchy | [Anthropic frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) and the product's existing design language | Render the most important screen with realistic content at phone and desktop sizes. Check whether the primary task is discoverable. |
+| React rendering or data-loading performance | [Vercel's skill directory](https://vercel.com/docs/agent-resources/skills) and the framework's versioned docs | Reproduce the slow journey and compare the same trace before and after the change. |
+| Confidence in a refactor | [ECC](https://github.com/affaan-m/ECC), especially its verification-loop skill, and the project's test commands | Run the applicable build, type, lint and regression checks, inspect the diff, and replay the original journey. |
+
+Read the candidate method itself before adopting it. Compare the strongest applicable approach with the project's current approach on user benefit, compatibility, implementation cost and measurable outcome. If both remain plausible, try the cheapest representative prototype or measurement that distinguishes them. Stop searching when the decision has enough evidence to act.
+
+Choose a connected MCP tool for the evidence or action it can actually provide. For example, use an available browser inspector to exercise a dialog with the keyboard and observe focus restoration. If unavailable, use an existing browser test or mark that interaction unverified. In the PRD or handoff, give a short decision note for material choices: source consulted, technique used, alternative considered, and observed result or planned check. Claim tool use only after executing it.
+
 ## Own the PRD for builds and redesigns
 
 Write the PRD yourself before implementation. Read the brief, existing specs, project instructions, manifests, and relevant screens or routes. Use [the PRD template](PRD.md) to create or update the target project's PRD.md, preserving prior requirements and user decisions. Keep the bundled template reusable. When the user delegates a choice, decide it, record why, and proceed. Ask only when a missing decision materially changes the intended outcome and available evidence cannot resolve it.
