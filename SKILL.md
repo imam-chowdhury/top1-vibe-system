@@ -1,11 +1,15 @@
 ---
 name: top1-vibe-system
-description: Use when the user references top1-vibe-system to build an app, redesign an existing product, or ship a feature or fix. Guides product decisions, visual design, implementation, and evidence-based QA.
+description: Use for building a new app, redesigning an existing product, or implementing a user-facing feature or fix. Also use when explicitly invoked as top1-vibe-system. Guides product decisions, visual design, implementation, and evidence-based QA.
 ---
 
 # Top 1% Vibe System
 
 When a user mentions this repo or skill alongside an app request, select the mode below and carry out the work in the target project. If the user requests a redesign, infer the product from the target repository. If there is no identifiable product, idea, or target, ask for that one missing input. Use the user's requirements, project conventions, and available tools. Resolve the linked guides relative to this skill. When working from a GitHub URL, open the linked files in that repository.
+
+## Ask when the answer changes the work
+
+Use the brief, existing project and earlier answers first. For routine, reversible choices, pick a sensible default and proceed. When a missing preference would materially change the result, ask one short question in the user's language. Offer a recommended option and a brief reason when helpful. Continue independent work while awaiting a necessary decision.
 
 ## Choose guidance for this project
 
