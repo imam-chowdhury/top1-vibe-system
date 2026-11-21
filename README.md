@@ -10,7 +10,7 @@ GitHub পড়তে পারে এমন agent-এর chat-এ এই prompt �
 https://github.com/imam-chowdhury/top1-vibe-system থেকে SKILL.md ও তার প্রাসঙ্গিক guide পড়ো। আমার বর্তমান project-এ [কার জন্য কী বানাতে বা উন্নত করতে চাই] বাস্তবায়ন করো। শেষে মূল কাজটি কীভাবে পরীক্ষা করেছ দেখাও।
 ```
 
-Agent-এর web access না থাকলে নিচের চারটি file একসঙ্গে attach করো বা workspace-এ একই folder-এ রাখো। তারপর বলো, “এই folder-এর SKILL.md অনুসরণ করে আমার কাজটি করো।” [SKILL.md](SKILL.md) · [DESIGN_RULES.md](DESIGN_RULES.md) · [QA_CHECKLIST.md](QA_CHECKLIST.md) · [PRD.md](PRD.md)
+Agent-এর web access না থাকলে নিচের পাঁচটি file একসঙ্গে attach করো বা workspace-এ একই folder-এ রাখো। তারপর বলো, “এই folder-এর SKILL.md অনুসরণ করে আমার কাজটি করো।” [SKILL.md](SKILL.md) · [METHODS.md](METHODS.md) · [DESIGN_RULES.md](DESIGN_RULES.md) · [QA_CHECKLIST.md](QA_CHECKLIST.md) · [PRD.md](PRD.md)
 
 ## Codex, Claude Code, Antigravity ও Cursor-এ global install
 

@@ -32,4 +32,5 @@ Identify the current screen or route, the observed friction, and the journey to 
 
 - Data source, ownership, persistence, and external dependencies where relevant
 - Important failure case and recovery behavior
+- Hosting, error monitoring and rollback path for the release
 - Explicit exclusions or unresolved assumptions
