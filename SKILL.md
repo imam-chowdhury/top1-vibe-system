@@ -17,10 +17,10 @@ A top result is one where the user's task succeeds reliably. More features do no
 
 | Aspect | Bar |
 | --- | --- |
-| Product | The primary journey completes end to end with real or representative data. Every shipped feature maps to a PRD priority. |
+| Product | The requested journey completes with real or representative data. Trace the result to the project PRD or, for a focused fix, the requested behavior. |
 | Design | One dominant action per view, realistic content, and a passed rendered critique from [the design rules](DESIGN_RULES.md) at 390px, 768px and 1440px. |
-| Accessibility | [WCAG 2.2](https://www.w3.org/TR/WCAG22/) AA for the journey: completion with only a keyboard, visible focus, 4.5:1 text contrast, accessible names and reduced motion. |
-| Performance | For web, LCP ≤ 2.5 s, INP ≤ 200 ms and CLS ≤ 0.1 on the target device or stated throttling. These are measured, never assumed. Native apps use the platform's equivalent startup and frame metrics. |
+| Accessibility | Test relevant [WCAG 2.2](https://www.w3.org/TR/WCAG22/) A and AA criteria for the journey, including keyboard access, focus and accessible names. Check normal text at 4.5:1 and large text at 3:1 where applicable. Respect reduced motion. Report the criteria tested and reserve a conformance claim for a full assessment. |
+| Performance | Evaluate web LCP ≤ 2.5 s, INP ≤ 200 ms and CLS ≤ 0.1 at the 75th percentile of real visits, separately for mobile and desktop. Before field data exists, report reproducible lab measurements with device and conditions, and leave field status unverified. For native apps, measure relevant startup and frame metrics. |
 | Security and privacy | Authorization and validation happen on the server. Secrets stay out of client bundles, logs and errors. Shipped dependencies have no known high or critical advisories, or there is a recorded exception. |
 | Data integrity | Writes survive reload, failure and retry without loss or duplicates. Schema changes are reversible or backed up first. |
 | Code | Build, type, lint and test commands pass. Each fixed bug gets a regression test where coverage would miss it. No dead code or unused dependency is added. |
@@ -28,8 +28,8 @@ A top result is one where the user's task succeeds reliably. More features do no
 
 ### Work loop
 
-- **Checkpoint.** Before a risky or wide edit, make sure the working tree is clean or saved. When the user's workflow allows commits, commit after each verified step so a regression can be reverted instead of patched over.
-- **Independent review.** Before handing off a build or redesign, review the full diff with fresh context against the PRD and this bar. Use a reviewer subagent, a second model or a clean session. The author's own context tends to miss its own mistakes. Fix the confirmed findings and replay the affected checks.
+- **Checkpoint.** Inspect existing changes and preserve the user's work. Use isolated commits where the project's workflow calls for them.
+- **Review.** Before handing off a build or redesign, review the diff against the PRD and applicable checks. Use independent review when available and authorized. Otherwise review the diff directly. Fix confirmed findings and replay the affected checks.
 - **Stop rule.** Work on the highest-impact remaining gap each round. Stop when the bar is met within the PRD scope, or when the remaining gaps need a user decision, device, credential or service. Report those gaps. Polishing beyond the agreed scope is not quality.
 
 ## Ask when the answer changes the work

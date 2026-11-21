@@ -5,9 +5,9 @@ This workflow applies only to the owner maintaining the skill itself. App work n
 Use the canonical source repository at https://github.com/imam-chowdhury/top1-vibe-system.
 
 1. Check local and remote changes first. Reconcile any edits that exist only in an installed copy.
-2. Validate: SKILL.md frontmatter is intact, every relative link resolves, and every external link returns 200.
+2. Validate skill frontmatter and local links. Check changed external references against their upstream sources. Report unreachable references separately from confirmed broken links.
 3. Commit the intended files and push to the owner's main branch. Verify the remote revision.
-4. Sync the runtime Markdown files (SKILL.md, METHODS.md, DESIGN_RULES.md, QA_CHECKLIST.md, PRD.md) to the owner's installed global skill, for example by rerunning `npx skills add imam-chowdhury/top1-vibe-system -g -a claude-code`. Then compare the file contents.
+4. Sync SKILL.md, METHODS.md, DESIGN_RULES.md, QA_CHECKLIST.md and PRD.md to the owner's installed global Codex skill. Compare all five files with the verified checkout. Check any other designated installations separately.
 5. Update the owner's designated Notion project guide when usage or behavior changes.
 6. Report any destination that could not be verified.
 

@@ -30,7 +30,7 @@ Apply these when the work will be deployed or handed to someone else to run.
 - [ ] One command or CI job runs the build, type, lint and test checks. Record whether it passed.
 - [ ] Run the ecosystem's dependency audit, such as `npm audit --omit=dev`. Resolve high and critical advisories in shipped code or record why each one is not exploitable.
 - [ ] Unhandled production errors reach a log or error tracker that leaves out sensitive values. Trigger one test error in preview to confirm it.
-- [ ] Know how to roll back the release. For a schema or data migration, test the rollback or take a backup in preview before production.
+- [ ] Rehearse migration recovery in preview with representative data. Before an authorized destructive migration, verify a recoverable backup of the actual target and its restore procedure.
 
 ## Decide whether the main journey is ready
 

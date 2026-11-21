@@ -27,6 +27,8 @@ Install শেষে target project-এ নতুন agent session খোলো�
 
 ## কোন কাজে কী বলবে
 
+Agent কাজের scope অনুযায়ী product, design, accessibility, performance, security, data integrity, code ও release-এর ফল জানাবে। Specialist বাছাই বা AI API integration দরকার হলে METHODS.md পড়বে। Skill-এর নিজের update ও sync করার নির্দেশনা আছে [MAINTAINING.md](MAINTAINING.md)-তে।
+
 - **নতুন app** — “ছোট ক্লিনিকের রোগীরা যেন ফোন ছাড়াই খালি সময় দেখে booking করতে পারেন। PRD আর implementation তুমি বেছে নাও।”
 - **Redesign** — “বর্তমান booking flow ফোনে পরীক্ষা করো। কোথায় রোগী আটকে যান দেখাও, উন্নতি করো, তারপর একই কাজ আবার পরীক্ষা করো।”
 - **Feature বা fix** — “Save দুবার চাপলে দুটি booking হচ্ছে। একটি booking থাকবে এবং reload-এর পরেও সেটি দেখা যাবে, এমনভাবে ঠিক করো।”
