@@ -56,6 +56,14 @@ Use the engineering time saved to improve one product-specific interaction. Iden
 
 For apps that call paid AI services, keep provider secrets server-side, restrict access per user, bound input and output sizes, and cap retries and usage. Test the quota-exhausted path and measure token usage and latency on a representative request before making cost claims.
 
+### Select a current AI API for the workload
+
+When adding or upgrading an AI integration, define a representative task and its required output, language, modalities, latency, budget and data-handling constraints. Compare the existing integration with suitable direct APIs or a gateway using current official sources: [Gemini models](https://ai.google.dev/gemini-api/docs/models), [OpenAI models](https://platform.openai.com/docs/models), and [OpenRouter provider routing](https://openrouter.ai/docs/guides/routing/provider-selection). For a gateway, check both the model and the eligible upstream providers, including fallback privacy and feature support.
+
+Verify the exact model ID, supported endpoint, SDK compatibility, pricing, account or regional availability, and deprecation status before implementation. Prefer a supported stable release for production. Record the decision date, source links and any unverified constraint. Keep the selected model configurable. Recheck on upgrade or retirement and compare against the working baseline before switching.
+
+Where authorized credentials are available, test shortlisted options on the same small set of representative inputs, including a difficult example. Compare usable output, latency and cost per successful task. Choose the simplest eligible option meeting the quality target within budget. Without live access, document a provisional choice and the acceptance test still needed.
+
 ## Challenge a feature when it works against the goal
 
 Apply this in every mode before committing to a consequential choice and again if implementation reveals new evidence. Infer the intended user outcome from the brief and the current journey. If the request fits, proceed. Surface a concern when you can name a meaningful consequence, such as adding a mandatory step to a time-sensitive task, excluding keyboard users, or increasing cost beyond the stated budget.
