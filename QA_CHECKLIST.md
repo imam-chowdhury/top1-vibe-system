@@ -21,3 +21,9 @@ Select checks by the flows and data the change touches. For a new app, review th
 - [ ] For performance-sensitive changes, measure the affected journey with representative data. Record the device or throttling setting and the observed bottleneck. Recheck under the same conditions after a fix.
 - [ ] For public pages intended for discovery, check page titles, meaningful headings, links, and indexability. For deployment changes, verify configuration and the production build in an authorized preview environment.
 - [ ] Record the actual command, viewport, or scenario and result. Distinguish observed passes, failures, and checks that could not run.
+
+## Decide whether the main journey is ready
+
+- [ ] Run the primary acceptance case through the normal user entry point against a representative environment. For persisted changes, check the result independently in a fresh session. Identify any mocked boundary.
+- [ ] For a multi-step write, interrupt the operation between steps using a test fixture. Inspect durable state after reopening. For example, a failed reschedule must preserve the original booking, and a successful retry must leave exactly one booking at the requested time.
+- [ ] If an essential acceptance case fails, fix it and replay it. If it cannot be exercised, report the affected journey as unverified and identify the missing evidence. Reserve a readiness claim for the scope and environment actually verified.
