@@ -7,6 +7,10 @@ description: Use for building a new app, redesigning an existing product, or imp
 
 When a user mentions this repo or skill alongside an app request, select the mode below and carry out the work in the target project. If the user requests a redesign, infer the product from the target repository. If there is no identifiable product, idea, or target, ask for that one missing input. Use the user's requirements, project conventions, and available tools. Resolve the linked guides relative to this skill. When working from a GitHub URL, open the linked files in that repository.
 
+## Default for every UI request
+
+Treat a single invocation as a request to apply the complete relevant workflow. Select the build, redesign or feature mode yourself. For UI work, use the bundled [design rules](DESIGN_RULES.md) during implementation and [QA checklist](QA_CHECKLIST.md) on the rendered result. Own visual direction, interaction design, interface copy, responsive behavior, accessibility and task verification within the requested scope. The user only needs to supply the product goal or change. Choose any useful specialists yourself and use the bundled guidance when none are available.
+
 ## Ask when the answer changes the work
 
 Use the brief, existing project and earlier answers first. For routine, reversible choices, pick a sensible default and proceed. When a missing preference would materially change the result, ask one short question in the user's language. Offer a recommended option and a brief reason when helpful. Continue independent work while awaiting a necessary decision.

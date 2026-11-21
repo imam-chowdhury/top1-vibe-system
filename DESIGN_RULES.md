@@ -37,4 +37,6 @@ Keep semantic names for surface, text, action, focus, success and error roles. D
 
 ## Compare the rendered result
 
+Critique the rendered screen before handoff. Read the visible copy in order. Remove filler headlines, invented metrics, redundant instructions and badges that serve no user decision. Inspect repeated cards and decorative effects individually: keep groupings that make comparison or navigation easier. Replace generic placeholder content with representative product content. Protect labels, focus cues, status messages and useful empty-state guidance during cleanup. Fix the most consequential issue and replay the primary task at narrow and wide widths.
+
 Use the same content and viewport for before/after captures. Ask a representative user to find the primary action and finish a realistic task without hints when available. Record observed hesitation or errors. Label a designer walkthrough as a walkthrough. Recheck changes in the running app, including static fallback, focus order, text zoom and one dense or long-content screen.
