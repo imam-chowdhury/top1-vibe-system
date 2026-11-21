@@ -1,6 +1,6 @@
 # Project requirements
 
-Copy this template into the target project for a new build. Fill it with decisions from the brief and conversation.
+Use this structure for a new build or redesign. The agent fills it from the brief and project evidence. Record the app name, mode, intended release outcome, and any assumptions.
 
 ## Product
 
@@ -14,15 +14,21 @@ Copy this template into the target project for a new build. Fill it with decisio
 - Brand, content, language, device, and accessibility needs
 - Main view, primary action, and navigation
 
-## First release
+## First release or redesign priorities
 
-| Feature | User journey | Observable completion condition |
+| Feature or improvement | User journey and reason for priority | Observable completion condition |
 | --- | --- | --- |
 | 1 | | |
 | 2 | | |
 | 3 | | |
 
+## Redesign baseline (existing projects)
+
+Identify the current screen or route, the observed friction, and the journey to replay after the change. Record the routes, integrations, permissions, and persisted behavior this release must preserve.
+
 ## Implementation constraints
+
+- Selected platform and stack, what already exists, and why any addition is needed
 
 - Data source, ownership, persistence, and external dependencies where relevant
 - Important failure case and recovery behavior

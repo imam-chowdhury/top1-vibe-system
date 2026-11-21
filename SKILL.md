@@ -5,18 +5,24 @@ description: Use when the user references top1-vibe-system to build an app, rede
 
 # Top 1% Vibe System
 
-When a user mentions this repo or skill alongside an app request, select the mode below and carry out the work in the target project. If the mention comes alone, ask what they want to build or improve. Use the user's requirements, project conventions, and available tools. Resolve the linked guides relative to this skill. When working from a GitHub URL, open the linked files in that repository.
+When a user mentions this repo or skill alongside an app request, select the mode below and carry out the work in the target project. If the user requests a redesign, infer the product from the target repository. If there is no identifiable product, idea, or target, ask for that one missing input. Use the user's requirements, project conventions, and available tools. Resolve the linked guides relative to this skill. When working from a GitHub URL, open the linked files in that repository.
+
+## Own the PRD for builds and redesigns
+
+Write the PRD yourself before implementation. Read the brief, existing specs, project instructions, manifests, and relevant screens or routes. Use [the PRD template](PRD.md) to create or update the target project's PRD.md, preserving prior requirements and user decisions. Keep the bundled template reusable. When the user delegates a choice, decide it, record why, and proceed. Ask only when a missing decision materially changes the intended outcome and available evidence cannot resolve it.
+
+Choose a product-specific visual direction, platform, stack, and up to three priorities. Favor a complete primary journey over disconnected showcase features. Consider one alternative that removes a step, prevents a common error, or improves a difficult decision. Adopt it when the benefit justifies its cost. Label assumptions and distinguish observed behavior from proposed improvements.
 
 ## A. Build a new app
 
-1. Read the brief and any existing project PRD. If the goal, design direction, or first three features are unclear, ask only for the missing details. Use [the PRD template](PRD.md) to capture decisions in the target project. Give each feature an observable completion condition.
-2. Read [the design rules](DESIGN_RULES.md). Build the shell with navigation, tokens, and one representative view using realistic sample content. Show the rendered shell before connecting business logic. Pause for feedback unless the user asked for autonomous delivery.
+1. Complete the PRD above. Choose a working name if none was supplied. Ground each feature in a user task and define a testable result.
+2. Read [the design rules](DESIGN_RULES.md). Build the shell with navigation, tokens, and one representative view using realistic sample content. Show the rendered shell before connecting business logic. Continue after the preview unless the user requested an approval checkpoint.
 3. Implement the primary journey end to end first. Connect the actual data source where required and exercise validation, persistence, and recovery. Add the remaining agreed features one at a time. Verify library behavior against the installed version and its official docs when uncertain.
 4. Run the applicable [QA checks](QA_CHECKLIST.md). Fix the highest-impact findings and repeat the affected checks.
 
 ## B. Redesign an existing app
 
-Run the current app where possible. Record the main journey, its result, and desktop and mobile views before editing. Audit them against [the design rules](DESIGN_RULES.md). Rank up to five observed problems by their effect on the user's task. Refactor the presentation in focused changes, preserving routes, permissions, data contracts, and working interactions. Replay the same journey and compare the same views using [the QA checklist](QA_CHECKLIST.md).
+Run the current app where possible. Record the main journey, its result, and desktop and mobile views before editing. Audit them against [the design rules](DESIGN_RULES.md). Rank up to five observed problems by their effect on the user's task. Use that baseline to write the redesign PRD before changing the app. Keep the product name and existing stack by default. Choose up to three improvements supported by the audit and define a before/after check for each. Introduce a dependency or interaction such as command search only for an identified need. Refactor the presentation in focused changes, preserving routes, permissions, data contracts, and working interactions. Replay the same journey and compare the same views using [the QA checklist](QA_CHECKLIST.md).
 
 ## C. Add a feature or fix a bug
 
